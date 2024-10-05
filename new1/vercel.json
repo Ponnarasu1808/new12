@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "new12/wsgi.py",
+        "src": "new1/wsgi.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb" , "runtime":"python3.9"}
       }
@@ -10,7 +10,7 @@
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "new12/wsgi.py"
+        "dest": "new1/wsgi.py"
       }
     ]
    
